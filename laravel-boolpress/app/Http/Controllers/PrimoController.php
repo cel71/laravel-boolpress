@@ -9,6 +9,6 @@ class PrimoController extends Controller
 {
     public function index() {
         $allPosts = Post::all();
-        return view('homepage', compact($allPosts));
+        return view('home', compact($allPosts));
     }
 }
