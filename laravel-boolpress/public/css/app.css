@@ -12332,3 +12332,43 @@ a.text-dark:focus {
   }
 }
 
+body {
+  background-color: palevioletred;
+}
+
+body .table .title-index {
+  color: palevioletred;
+  font-weight: bold;
+}
+
+body .table .title-show {
+  color: palevioletred;
+  font-weight: bold;
+  font-size: 32px;
+  text-align: center;
+  padding: 25px;
+}
+
+body .table .abstract-show {
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+
+body .table .author-index {
+  color: red;
+  font-weight: bold;
+}
+
+body .table .author-show {
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: end;
+  padding-bottom: 20px;
+}
+
+body .table a {
+  font-size: 25px;
+  color: steelblue;
+}
+

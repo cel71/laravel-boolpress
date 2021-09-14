@@ -2,8 +2,8 @@
 
 @section('content')
     <div class="container table table-success table-striped">
-        <div>{{$allPostsTre->title}}</div>
-        <div>{{$allPostsTre->abstract}}</div>
-        <div>{{$allPostsTre->author}}</div>
+        <div class="title-show">{{$allPostsTre->title}}</div>
+        <div class="abstract-show">{{$allPostsTre->abstract}}</div>
+        <div class="author-show">{{$allPostsTre->author}}</div>
     </div>
 @endsection

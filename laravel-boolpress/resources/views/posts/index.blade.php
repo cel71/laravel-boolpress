@@ -16,9 +16,9 @@
                 @foreach ($allPostsDue as $post)
                     <tr>
                         <th scope="row">{{$post->id}}</th>
-                        <td>{{$post->title}}</td>
+                        <td class="title-index">{{$post->title}}</td>
                         <td>{{$post->abstract}}</td>
-                        <td>{{$post->author}}</td>
+                        <td class="author-index">{{$post->author}}</td>
                         <td><a href="{{ route('posts.show', $post) }}"><i class="bi bi-book-half"></i></a></td>
                     </tr> 
                 @endforeach
