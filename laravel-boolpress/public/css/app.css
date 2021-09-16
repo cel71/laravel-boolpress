@@ -12336,6 +12336,41 @@ body {
   background-color: palevioletred;
 }
 
+body a {
+  color: blue;
+}
+
+body .titlefirst {
+  text-align: center;
+  padding-bottom: 18px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+body .addPost {
+  font-size: 18px;
+  padding-bottom: 20px;
+  text-decoration: underline;
+}
+
+body .button {
+  margin: 25px 0;
+}
+
+body .button a {
+  background-color: blue;
+  color: white;
+  width: 120px;
+  height: 20px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+body .table {
+  padding: 25px;
+}
+
 body .table .title-index {
   color: palevioletred;
   font-weight: bold;
@@ -12359,6 +12394,11 @@ body .table .author-index {
   font-weight: bold;
 }
 
+body .table .icon-index {
+  text-align: center;
+  font-size: 25px;
+}
+
 body .table .author-show {
   color: red;
   font-weight: bold;
@@ -12367,8 +12407,10 @@ body .table .author-show {
   padding-bottom: 20px;
 }
 
-body .table a {
-  font-size: 25px;
+body .form-group div {
+  padding-bottom: 20px;
   color: steelblue;
+  font-weight: bold;
+  font-size: 18px;
 }
 

@@ -11,7 +11,40 @@
 body {
     background-color: palevioletred;
 
+    a {
+        color: blue;
+    }
+
+    .titlefirst {
+        text-align: center;
+        padding-bottom: 18px;
+        margin-top: 15px;
+        font-weight: bold;
+    }
+
+    .addPost {
+        font-size: 18px;
+        padding-bottom: 20px;
+        text-decoration: underline;
+    }
+
+    .button {
+
+        margin: 25px 0;
+
+        a {
+            background-color: blue;
+            color: white;
+            width: 120px;
+            height: 20px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+        }
+    }
+
     .table {
+        padding: 25px;
 
         .title-index {
             color: palevioletred;
@@ -36,6 +69,11 @@ body {
             font-weight: bold;
         }
 
+        .icon-index {
+            text-align: center;
+            font-size: 25px;
+        }
+
         .author-show {
             color: red;
             font-weight: bold;
@@ -43,11 +81,13 @@ body {
             text-align: end;
             padding-bottom: 20px;
         }
+    }
 
-        a {
-            font-size: 25px;
-            color: steelblue;
-        }
+    .form-group div {
+        padding-bottom: 20px;
+        color: steelblue;
+        font-weight: bold;
+        font-size: 18px;
     }
 }
 

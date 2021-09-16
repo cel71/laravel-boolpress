@@ -25,7 +25,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        return view('posts.create');
     }
 
     /**
@@ -36,7 +36,22 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        $request->validate([
+            'title' => 'required',
+            'abstract' => 'required',
+            'author' => 'required',
+        ]);
+        
+        $data = $request->all();
+
+        $postObject = new Post();
+        $postObject->title = $data['title'];
+        $postObject->abstract = $data['abstract'];
+        $postObject->author = $data['author'];
+        $postObject->save();
+
+        return redirect()->route('posts.show', $postObject->id);
     }
 
     /**
