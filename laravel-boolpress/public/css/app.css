@@ -12353,11 +12353,11 @@ body .addPost {
   text-decoration: underline;
 }
 
-body .button {
+body .button2 {
   margin: 25px 0;
 }
 
-body .button a {
+body .button2 a {
   background-color: blue;
   color: white;
   width: 120px;
@@ -12369,6 +12369,12 @@ body .button a {
 
 body .table {
   padding: 25px;
+}
+
+body .table td a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 body .table .title-index {
@@ -12395,7 +12401,6 @@ body .table .author-index {
 }
 
 body .table .icon-index {
-  text-align: center;
   font-size: 25px;
 }
 
@@ -12405,6 +12410,10 @@ body .table .author-show {
   font-size: 20px;
   text-align: end;
   padding-bottom: 20px;
+}
+
+body .table button {
+  color: blue;
 }
 
 body .form-group div {

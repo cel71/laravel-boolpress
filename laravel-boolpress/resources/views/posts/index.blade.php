@@ -23,9 +23,15 @@
                         <td class="title-index">{{$post->title}}</td>
                         <td>{{$post->abstract}}</td>
                         <td class="author-index">{{$post->author}}</td>
-                        <td class="icon-index"><a href="{{ route('posts.show', $post) }}"><i class="bi bi-book-half"></i></a></td>
-                        <td class="icon-index"><a href="{{ route('posts.create', $post) }}"><i class="bi bi-eyeglasses"></i></a></td>
-                        <td class="icon-index"><a href=""><i class="bi bi-x-square-fill"></i></a></td>
+                        <td><a href="{{ route('posts.show', $post) }}"><button type="submit" class="btn icon-index"><i class="bi bi-book-half"></i></button></a></td>
+                        <td><a href="{{ route('posts.edit', $post) }}"><button type="submit" class="btn icon-index"><i class="bi bi-eyeglasses"></i></button></a></td>
+                        <td>
+                            <form action="{{ route('posts.destroy', $post) }}" method="POST">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="btn icon-index"><i class="bi bi-x-square-fill"></i></button>
+                            </form>
+                        </td>
                     </tr> 
                 @endforeach
             </tbody>

@@ -28,7 +28,7 @@ body {
         text-decoration: underline;
     }
 
-    .button {
+    .button2 {
 
         margin: 25px 0;
 
@@ -44,7 +44,17 @@ body {
     }
 
     .table {
+
         padding: 25px;
+
+        td {
+
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
 
         .title-index {
             color: palevioletred;
@@ -70,7 +80,6 @@ body {
         }
 
         .icon-index {
-            text-align: center;
             font-size: 25px;
         }
 
@@ -80,6 +89,10 @@ body {
             font-size: 20px;
             text-align: end;
             padding-bottom: 20px;
+        }
+
+        button {
+            color: blue;
         }
     }
 

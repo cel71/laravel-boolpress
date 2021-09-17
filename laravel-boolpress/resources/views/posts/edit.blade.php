@@ -13,20 +13,21 @@
             </div>
         @endif
         <div class="button2"><a href="{{ route('posts.index') }}">Torna a Post</a></div>
-        <form action="{{ route('posts.store') }}" method="POST">
+        <form action="{{ route('posts.update', $post) }}" method="POST">
             @csrf
+            @method('PUT')
 
             <div>
                 <label for="title">Title:</label>
-                <input class="form-control" type="text" name="title" id="title">
+                <input class="form-control" type="text" name="title" id="title" value="{{ $post->title }}">
             </div>
             <div>
                 <label for="abstract">Abstract:</label>
-                <input class="form-control" type="text" name="abstract" id="abstract">
+                <input class="form-control" type="text" name="abstract" id="abstract" value="{{ $post->abstract }}">
             </div>  
             <div>
                 <label for="author">Author:</label>
-                <input class="form-control" type="text" name="author" id="author">
+                <input class="form-control" type="text" name="author" id="author" value="{{ $post->author }}">
             </div>
             <div>
                 <button type="submit" class="btn btn-primary">Invia</button>
