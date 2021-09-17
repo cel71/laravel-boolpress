@@ -26,11 +26,30 @@
                         <td><a href="{{ route('posts.show', $post) }}"><button type="submit" class="btn icon-index"><i class="bi bi-book-half"></i></button></a></td>
                         <td><a href="{{ route('posts.edit', $post) }}"><button type="submit" class="btn icon-index"><i class="bi bi-eyeglasses"></i></button></a></td>
                         <td>
-                            <form action="{{ route('posts.destroy', $post) }}" method="POST">
-                                @csrf
-                                @method('DELETE')
-                                <button type="submit" class="btn icon-index"><i class="bi bi-x-square-fill"></i></button>
-                            </form>
+                            <button type="button" class="btn icon-index" data-toggle="modal" data-target="#staticBackdrop"><i class="bi bi-x-square-fill"></i></button>
+                            <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="staticBackdropLabel">Delete Post</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Sei sicuro di voler eliminare il post ?
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <form action="{{ route('posts.destroy', $post) }}" method="POST">
+                                                @csrf
+                                                @method('DELETE')
+                                                <button type="submit" class="btn btn-danger">Delete</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </td>
                     </tr> 
                 @endforeach
