@@ -11,6 +11,16 @@
 body {
     background-color: palevioletred;
 
+    .card-body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        button {
+            font-weight: bold;
+        }
+    }
+
     a {
         color: blue;
     }

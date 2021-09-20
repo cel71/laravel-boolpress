@@ -12336,6 +12336,16 @@ body {
   background-color: palevioletred;
 }
 
+body .card-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+body .card-body button {
+  font-weight: bold;
+}
+
 body a {
   color: blue;
 }

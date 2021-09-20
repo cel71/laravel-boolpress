@@ -14,7 +14,8 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                    <h1>Benvenuto</h1>
+                    <a href="{{ route('posts.index') }}"><button type="submit" class="btn btn-primary">Vai a Posts</button></a>
                 </div>
             </div>
         </div>
