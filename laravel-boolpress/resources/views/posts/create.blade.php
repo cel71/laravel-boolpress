@@ -16,6 +16,17 @@
         <form action="{{ route('posts.store') }}" method="POST">
             @csrf
 
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <button class="btn btn-primary" type="category_id">Button</button>
+                </div>
+                <select class="custom-select" id="category_id" name="category_id" aria-label="Example select with button addon">
+                    <option selected>Choose category...</option>
+                    @foreach($categories as $category)
+                        <option value="{{$category->id}}">{{ $category->name }}</option>
+                    @endforeach
+                </select>
+            </div>
             <div>
                 <label for="title">Title:</label>
                 <input class="form-control" type="text" name="title" id="title">

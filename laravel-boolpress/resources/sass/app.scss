@@ -41,6 +41,7 @@ body {
     .button2 {
 
         margin: 25px 0;
+        font-weight: bold;
 
         a {
             background-color: blue;
@@ -66,6 +67,11 @@ body {
             }
         }
 
+        .name-show {
+            color: green;
+            padding: 15px 0;
+        }
+
         .title-index {
             color: palevioletred;
             font-weight: bold;
@@ -80,8 +86,9 @@ body {
         }
 
         .abstract-show {
-            padding-bottom: 20px;
+            padding: 20px 0;
             font-size: 20px;
+            text-align: center;
         }
 
         .author-index {

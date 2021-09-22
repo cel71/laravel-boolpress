@@ -12365,6 +12365,7 @@ body .addPost {
 
 body .button2 {
   margin: 25px 0;
+  font-weight: bold;
 }
 
 body .button2 a {
@@ -12387,6 +12388,11 @@ body .table td a {
   justify-content: center;
 }
 
+body .table .name-show {
+  color: green;
+  padding: 15px 0;
+}
+
 body .table .title-index {
   color: palevioletred;
   font-weight: bold;
@@ -12401,8 +12407,9 @@ body .table .title-show {
 }
 
 body .table .abstract-show {
-  padding-bottom: 20px;
+  padding: 20px 0;
   font-size: 20px;
+  text-align: center;
 }
 
 body .table .author-index {

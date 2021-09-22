@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container form-group">
-        <h1 class="titlefirst">NEW POST:</h1>
+        <h1 class="titlefirst">MODIFICATION POST:</h1>
         @if ($errors->any())
             <div class="alert alert-danger">
                 <ul>
